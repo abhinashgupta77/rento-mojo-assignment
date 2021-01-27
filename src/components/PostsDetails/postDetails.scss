@@ -1,0 +1,84 @@
+.post-wrapper {
+  h1 {
+    text-align: center;
+    color: #FF0066;
+  }
+  .post-details-container {
+    margin: 0 20px 20px;
+    padding: 20px;
+    background-color: lavender;
+    box-shadow: 0px 4px 9px -1px grey;
+    border-radius: 4px;
+    h3 {
+      color: darkblue;
+      font-size: 26px;
+    }
+    p {
+      font-size: 20px;
+      color: black;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        padding: 10px 16px;
+        border: none;
+        background: linear-gradient(135deg, #2b2ecf 0%, #652bcf 100%);
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+      }
+      button.delete-btn{
+        background: #FF0066;
+      }
+    }
+  }
+  .post-details-main-container {
+    h1 {
+      text-align: center;
+    }
+    .card-content-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+      cursor: default;
+      .card-container {
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 10px 10px 16px 10px;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0px 5px 20px 0px rgba(43, 46, 207, 0.5);
+        }
+        h3 {
+          color: #2b2ecf;
+          font-size: 20px;
+          line-height: 29px;
+          text-align: left;
+          margin: 10px 0 10px 0;
+        }
+        .body-conatiner {
+          color: #7f8a9c;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: left;
+          margin: 0 0 20px 10px;
+        }
+        .view-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          a {
+            color: #2b2ecf;
+          }
+        }
+      }
+    }
+  }
+}

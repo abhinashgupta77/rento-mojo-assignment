@@ -1,0 +1,38 @@
+.main-container {
+    h1{
+        text-align: center;
+    }
+  .card-content-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+    padding: 10px 20px;
+    cursor: default;
+    .card-container {
+      overflow: hidden;
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 10px 10px 16px 10px;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 5px 20px 0px rgba(43, 46, 207, 0.5);
+      }
+      h3 {
+        color: #2b2ecf;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: left;
+        margin: 10px 0 10px 10px;
+      }
+      .view-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            color: #2b2ecf;
+        }
+      }
+    }
+  }
+}
